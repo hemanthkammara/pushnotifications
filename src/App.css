@@ -1,0 +1,17 @@
+.App {
+
+  text-align: center;
+  background-color: #eae9ea;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  margin: 0px;
+}
+
+
+
+
