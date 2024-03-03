@@ -13,7 +13,7 @@ function App() {
      const token=await getToken(messaging,{
       vapidKey:"BN6gZDZjRQFEwD7V1zD3KIu95ZSGbZDLj6ccIZISKtucTcDNXSnlzWYcIXbiG1FzvDjfr0v6dcNaoylOSbgl0vw"
      });
-    // console.log("token",token);
+     console.log("token",token);
     }else if(permission==="denied"){
       alert("denied permission")
     }
