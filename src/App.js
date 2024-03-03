@@ -3,6 +3,7 @@ import './App.css';
 import { useEffect } from 'react';
 import { getToken } from "firebase/messaging";
 import { messaging } from './firebase';
+import { onMessage } from 'firebase/messaging';
 function App() {
 
   async function requestPermission(){
@@ -20,6 +21,10 @@ function App() {
   }
 useEffect(()=>{
     requestPermission()
+    onMessage(messaging,(payload) => {
+      console.log(payload);
+      alert(payload.notification.body)
+    })
 },[])
 
 
